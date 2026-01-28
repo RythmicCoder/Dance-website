@@ -1,0 +1,550 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar-container {
+    display: flex;
+    /* keepas the items in order */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-items li {
+    margin: 0 1rem;
+}
+
+.menu-items a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* signin sign up btn */
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.auth-buttons .btn {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ff5733;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #c70039;
+}
+
+.btn-secondary {
+    background-color: #555;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #333;
+}
+
+/* Showcase area styles for Index Page */
+.showcase-area {
+    position: relative;
+    background: url('images/i.jpg') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+/* contents in the showcase */
+.showcase-container {
+    max-width: 600px;
+}
+
+.main-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* About Us section for Index Page */
+#aboutUs {
+    padding: 4rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-header h2 {
+    font-size: 2.5rem;
+    color: #ff5733;
+    margin-bottom: 0.5rem;
+}
+
+.about-text {
+    max-width: 1000px;
+    margin: 1rem auto;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Know More Button (from Index page) */
+.btn-primary {
+    background-color: #ff5733;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c70039;
+    transform: scale(1.05); /* Adds a slight zoom effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds shadow on hover */
+}
+
+/* About Us page specific styles */
+.page-header {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #f4f4f4;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    color: #ff5733;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+.team1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member1 {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    padding: 1rem;
+    
+    
+    
+}
+
+.team-member1 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 90px;
+    margin-bottom: 1rem;
+}
+
+.team-member1 h3 {
+    font-size: 1.5rem;
+    color: #ff5733;
+}
+
+.team-member1 p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.team-member1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#aboutUs {
+    padding: 2rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    padding: 2rem;
+    
+    
+    
+}
+
+.team-member img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #ff5733;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Contact Us section styles */
+.contact-section {
+    background: url('images/i2.jpg') no-repeat center center/cover;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    padding: 4rem 2rem; /* Adjust padding as necessary */
+    color: white; /* Adjust text color for visibility */
+}
+
+.contact-container {
+    max-width: 600px; /* Set max width for the form */
+    margin: 0 auto; /* Center the container */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for form */
+    border-radius: 10px; /* Rounded corners */
+    padding: 2rem;
+    position: absolute; /* Allows fine control over its position */
+    left: 20px; /* Moves it slightly away from the left edge */
+    top: 50%; /* Optional: Vertically center it */
+    transform: translateY(-50%); /* Optional: Centering adjustment */
+}
+
+.contact-container h2 {
+    text-align: center; /* Center the heading */
+    color: #ff5733; /* Optional: Style the heading differently */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff5733;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #c70039;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+/* Footer styles */
+.footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 1rem 0; /* Vertical padding */
+}
+
+.footer-container {
+    max-width: 1200px; /* Optional: Set max width */
+    margin: 0 auto; /* Center the footer content */
+}
+
+.footer a {
+    color: #ff5733; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* General layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dance Forms Section */
+.dance-forms-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ff5733;
+    margin-bottom: 1rem;
+}
+
+/* Dance Forms Grid */
+.dance-forms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Dance Form Boxes */
+.dance-form {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+    text-align: center;
+}
+
+.dance-form:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Dance Image with Background */
+.dance-image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Text Styling */
+.dance-form h3 {
+    font-size: 1.2rem;
+    color: #ff5733;
+    margin: 0.5rem 0;
+}
+
+.dance-form p {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+/* Dance Shots Section */
+.dance-shots-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ff5733;
+    margin-bottom: 1rem;
+}
+
+/* Dance Shots Grid */
+.dance-shots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 6fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+/* Dance Shot Boxes */
+.dance-shot {
+    position: relative; /* Positioning for the overlay */
+    background-color: #fff;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+    height: 450px;
+    text-align: center;
+}
+
+.dance-shot:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Video Styling */
+.dance-shot video {
+    width: 100%;
+    height: 400px;
+    border-radius: 50px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+/* Overlay Text Styling */
+.dance-shot .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: #ff5733;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.dance-shot:hover .overlay-text {
+    opacity: 1;
+}
+
+/* Video Hover Effect: Play on Hover */
+.dance-shot video {
+    opacity: 0.9;
+}
+
+.dance-shot:hover video {
+    opacity: 1;
+}
+
+
+/* Join Us Section Styles */
+.join-us-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4; /* Light background for contrast */
+    margin-top: 2rem; /* Space above the section */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.join-us-title {
+    font-size: 2rem;
+    color: #ff5733;
+    margin-bottom: 1rem; /* Space below the title */
+}
+
+.join-us-text {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem; /* Space below the text */
+    color: #333; /* Text color */
+}
+
+.join-us-btn {
+    background-color: #ff5733; /* Button color */
+    color: white; /* Button text color */
+    padding: 0.75rem 1.5rem; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    text-decoration: none; /* Remove underline from the link */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+.join-us-btn:hover {
+    background-color: #c70039; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+/* User Profile Section Styles */
+.user-profile-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    margin: 2rem auto; /* Center the section */
+    max-width: 600px; /* Maximum width */
+}
+
+.profile-title {
+    font-size: 2rem;
+    color: #ff5733;
+    margin-bottom: 1rem; /* Space below the title */
+}
+
+.profile-info {
+    text-align: left; /* Align text to the left for better readability */
+}
+
+.profile-info p {
+    font-size: 1.2rem; /* Font size for profile information */
+    margin: 0.5rem 0; /* Space between lines */
+}
+
+.profile-info ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+
+
+
