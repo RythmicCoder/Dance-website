@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In - Chroma</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .error-message {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body class="sigin">
+    <!-- Header Bar -->
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <a href="1.html" class="logo">Chroma</a>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="danceforms.html">Dance Forms</a></li>
+                <li><a href="danceshots.html">Dance Shots</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="profile.html"><img src="images/profile.png" alt="profile" style="width: 32px;;"></a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                <a href="signin.html" class="btn btn-secondary">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sign In Form -->
+    <div class="main3">
+        <h2>Sign In</h2>
+        <form id="signinForm" class="small-element">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <div id="emailError" class="error-message"></div>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <div id="passwordError" class="error-message"></div>
+
+            <button type="submit">Sign In</button>
+            <p class="signup-link">
+                Don't have an account? <a href="signup.html">Sign Up</a>
+            </p>
+        </form>
+    </div>
+
+    <script>
+       
+        document.getElementById('signinForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            let isValid = true;
+
+        
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('passwordError').textContent = '';
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+          
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+                isValid = false;
+            }
+
+            if (!password) {
+                document.getElementById('passwordError').textContent = 'Password is required.';
+                isValid = false;
+            }
+
+            if (isValid) {
+                
+                alert("Sign In successful!");
+                window.location.href = 'profile.html';
+               
+            }
+        });
+    </script>
+</body>
+</html>

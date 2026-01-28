@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Chroma</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body class="prf">
+    <!-- Header Bar -->
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <a href="1.html" class="logo">Chroma</a>
+            <ul class="menu-items">
+                <li><a href="1.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>  
+                <li><a href="danceforms.html">Dance Forms</a></li>  
+                <li><a href="danceshots.html">Dance Shots</a></li>  
+                <li><a href="contactus.html">Contact Us</a></li>
+                
+            </ul>
+            
+            <div class="auth-buttons">
+                <a href="profile.html"><img src="images/profile.png" alt="profile" style="width: 32px;;"></a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                <a href="signin.html" class="btn btn-secondary">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="main1">
+        <h2>User Profile</h2>
+        <div class="profile-info">
+            <p><strong>Name:</strong> <span id="name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Contact:</strong> <span id="mobile"></span></p>
+            <p><strong>Gender:</strong> <span id="gender"></span></p>
+            <p><strong>Timeslot:</strong> <span id="timeslot"></span></p>
+            <p><strong>Selected Dance Styles:</strong> <span id="danceStyles"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Retrieve user data from local storage
+        document.getElementById('name').innerText = localStorage.getItem('name');
+        document.getElementById('email').innerText = localStorage.getItem('email');
+        document.getElementById('mobile').innerText = localStorage.getItem('mobile');
+        document.getElementById('gender').innerText = localStorage.getItem('gender');
+        document.getElementById('timeslot').innerText = localStorage.getItem('timeslot');
+        document.getElementById('danceStyles').innerText = localStorage.getItem('danceStyles').split(',').join(', '); // Display selected styles
+    </script>
+</body>
+</html>
